@@ -1,0 +1,121 @@
+.container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 100px;
+  background-color: red;
+}
+
+.slide_wrapper {
+  border-radius: 40px;
+  border: 1px solid white;
+  background-color: #f2f2f2;
+  padding: 6px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.return_wrapper {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide_container {
+  position: absolute;
+  display: flex;
+  // width: 300px;
+  bottom: 0;
+  left: 50%;
+  margin: 30px;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.slider {
+  flex: 1;
+  margin: 10px;
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+  background-color: yellow;
+}
+
+.play_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: green;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mute_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  left: 200px;
+}
+
+.return_button {
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+canvas {
+  display: block;
+  /* fix necessary to remove space at bottom of canvas */
+}
+
+.return_text {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.share_container {
+  background-color: #ffffff;
+  gap: 6px;
+  padding: 4px 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share_text {
+  font-size: 14px;
+}
+
+.seekbar_container {
+  min-width: 300px;
+  margin-left: 12px;
+}
+.counter {
+  position: absolute;
+  font-size: 12px;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(50%);
+  color: green;
+}
